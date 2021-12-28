@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #66806A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+h3{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background-color: #105652;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+}
+h3 span{
+    font-weight: bolder;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: anim 2s linear infinite;
+}
+@keyframes anim{
+    50%{
+        color: yellow;
+    }
+    100%{
+        color: gray;
+    }
+}
+div{
+    width: 90%;
+    height: 480px;
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+embed{
+    width: 100%;
+    -webkit-width:100%;
+    height: 100%;
+    -webkit-height:100%;
+    border: 5px solid black;
+    -webkit-border: 5px solid black;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    position: absolute;
+}
+a{
+    position: absolute;
+    top: 80px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: small;
+    color: yellow;
+    transition-duration: .1s;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+a:hover{
+    color: #fff;
+    letter-spacing: 2.5px;
+}
+@media only screen and (orientation: portrait){
+    h3{
+        padding: 10px 0;
+    }
+    h3 span{
+        font-size: large;
+    }
+}
